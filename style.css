@@ -175,3 +175,24 @@ html,body{
   background: pink;
 }
 
+.face:hover .eye.right {
+  border-left-color: #2f4040;
+}
+
+.face:hover .eye.left {
+  border-right-color: #2f4040;
+}
+
+.face:hover .mouth {
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+.face:hover .teeth,
+.face:hover .teeth:before,
+.face:hover .teeth:after {
+  border-left-color: rgb(11, 121, 121);
+}
+
+h1:hover{
+  color: aqua;
+}
