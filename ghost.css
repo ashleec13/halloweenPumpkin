@@ -1,4 +1,4 @@
-body{
+body {
     overflow: hidden;
     height: 100vh;
     width: 100vw;
@@ -6,10 +6,10 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
-    background:#424f6f;
+    background: #424f6f;
 }
 
-#container{
+#container {
     width: 400px;
     height: 400px;
     padding: 0;
@@ -17,28 +17,32 @@ body{
     background: #424f6f;
 }
 
-*:after, *:before{
+*:after,
+*:before {
     box-sizing: inherit;
 }
+
 /* WHOLE GHOST */
-#spooky{
+#spooky {
     margin: 10% auto;
-    width:80%;
-    height:80%;
+    width: 80%;
+    height: 80%;
     animation: floaty 9s infinite;
 }
+
 /* BODY */
-#spooky #body{
+#spooky #body {
     position: relative;
     margin: 50px auto 0;
     width: 180px;
     height: 220px;
     background: #f2fbf1;
-    border-top-left-radius:90px;
-    border-top-right-radius:90px;
+    border-top-left-radius: 90px;
+    border-top-right-radius: 90px;
 }
 
-#spooky #body:before, #spooky #body:after{
+#spooky #body:before,
+#spooky #body:after {
     content: ' ';
     position: absolute;
     top: 130px;
@@ -50,15 +54,16 @@ body{
     animation: floaty .2s infinite;
 }
 
-#spooky #body:before{
-    left:-18px;
+#spooky #body:before {
+    left: -18px;
 }
 
-#spooky #body:after{
-    right:-18px;
+#spooky #body:after {
+    right: -18px;
 }
+
 /* EYES */
-#spooky #body #eyes{
+#spooky #body #eyes {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -66,7 +71,9 @@ body{
     width: 90px;
     height: 20px;
 }
-#spooky #body #eyes:before, #spooky #body #eyes:after{
+
+#spooky #body #eyes:before,
+#spooky #body #eyes:after {
     content: ' ';
     display: block;
     width: 30px;
@@ -74,8 +81,9 @@ body{
     background: #252c49;
     border-radius: 50%;
 }
+
 /* MOUTH */
-#spooky #body #mouth{
+#spooky #body #mouth {
     background: #252c49;
     margin: 25px auto 0;
     width: 60px;
@@ -84,7 +92,7 @@ body{
     border-bottom-right-radius: 30px;
 }
 
-#spooky #body #mouth:before{
+#spooky #body #mouth:before {
     content: ' ';
     display: block;
     background: #fff;
@@ -92,19 +100,20 @@ body{
     width: 10px;
     height: 10px;
 }
+
 /* FEET */
-#spooky #body #feet{
+#spooky #body #feet {
     position: absolute;
-    display:flex;
+    display: flex;
     bottom: -18px;
     width: 180px;
-    height:36px;
+    height: 36px;
 }
 
 
-#spooky #body #feet > *,
+#spooky #body #feet>*,
 #spooky #body #feet::before,
-#spooky #body #feet::after{
+#spooky #body #feet::after {
     content: ' ';
     width: 36px;
     height: 36px;
@@ -112,24 +121,39 @@ body{
     border-radius: 50%;
 }
 
-#shadow{
+#shadow {
     margin: -90px auto 0;
     background: #252c49;
     width: 180px;
-    height:40px;
+    height: 40px;
     border-radius: 50%;
     animation: zoomy 2s infinite;
 }
+
 /* MOVEMENT */
 @keyframes floaty {
-    0%, 100% { transform: translateY(100); }
-    50% { transform: translateY(-9000px); }
+
+    0%,
+    100% {
+        transform: translateY(100);
+    }
+
+    50% {
+        transform: translateY(-9000px);
+    }
 }
 
 @keyframes zoomy {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(0.8); }
-} 
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+}
 
 /* ADDITIONAL STUFF */
 #container:hover {
@@ -144,4 +168,3 @@ body{
 #spooky:hover #body #mouth {
     background: #FFFF33;
 }
-
