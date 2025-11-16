@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Ghost CSS Animation</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -16,19 +16,30 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <!-- Custom styles -->
+        <link rel="stylesheet" href="ghost.css">
     </head>
 
     <body>
         <header>
             <!-- place navbar here -->
-             <a href="ghost.html">Ghost Page</a>
+             <a href="index.html">Home Page</a>
              <a href="pumpkin.html">Pumpkin Page</a>
         </header>
-        <div class="container">
-            <h1 class="text-center">Welcome to Ashlee's spooky animations!</h1>
-            <p class="text-center">Choose a page to see some spooky animations.</p>
-            <p class="text-center">The pumpkin page features a pumpkin that moves up and down, on hover turns pink and when hovered over eyes or mouth, the pumpkin has teeth!</p>
-            <p class="text-center">The ghost page features a ghost that floats up and down, and on hover has a spooky surprise !</p>
+        <div id="container">
+            <div id="spooky">
+                <div id="body">
+                    <div id="eyes"></div>
+                    <div id="mouth"></div>
+                    <div id="feet">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <div id="shadow"></div>
+        </div>
         <footer>
             <!-- place footer here -->
         </footer>
