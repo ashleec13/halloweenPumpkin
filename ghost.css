@@ -20,14 +20,14 @@ body{
 *:after, *:before{
     box-sizing: inherit;
 }
-
+/* WHOLE GHOST */
 #spooky{
     margin: 10% auto;
     width:80%;
     height:80%;
     animation: floaty 9s infinite;
 }
-
+/* BODY */
 #spooky #body{
     position: relative;
     margin: 50px auto 0;
@@ -57,7 +57,7 @@ body{
 #spooky #body:after{
     right:-18px;
 }
-
+/* EYES */
 #spooky #body #eyes{
     display: flex;
     justify-content: space-between;
@@ -74,7 +74,7 @@ body{
     background: #252c49;
     border-radius: 50%;
 }
-
+/* MOUTH */
 #spooky #body #mouth{
     background: #252c49;
     margin: 25px auto 0;
@@ -92,7 +92,7 @@ body{
     width: 10px;
     height: 10px;
 }
-
+/* FEET */
 #spooky #body #feet{
     position: absolute;
     display:flex;
@@ -120,7 +120,7 @@ body{
     border-radius: 50%;
     animation: zoomy 2s infinite;
 }
-
+/* MOVEMENT */
 @keyframes floaty {
     0%, 100% { transform: translateY(100); }
     50% { transform: translateY(-9000px); }
@@ -131,7 +131,7 @@ body{
     50% { transform: scale(0.8); }
 } 
 
-
+/* ADDITIONAL STUFF */
 #container:hover {
     background: #8b0000;
 }

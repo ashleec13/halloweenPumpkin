@@ -14,7 +14,7 @@ html,body{
     align-items: center;
     flex-direction: column;
 }
-
+/* OVERALL PUMPKIN */
 .pumpkin {
     height: 11em;
     width: 15em;
@@ -64,7 +64,7 @@ html,body{
     z-index: -1;
     box-shadow: inset 0 0px 10px #29412b;
 }
-
+/* EYE STUFF */
   .pumpkin .eye {
     position: absolute;
     width: 0;
@@ -86,7 +86,7 @@ html,body{
     border-bottom: 2.1em solid transparent;
     border-right: 2.4em solid #401d03;
   }
-
+/* MOUTH  */
   .pumpkin .mouth {
     width: 4em;
     height: 2em;
@@ -149,6 +149,7 @@ html,body{
     animation: zoom 3s infinite;
 }
 
+/* MAKES THE PUMPKIN MOVE */
 @keyframes float {
     0%, 100%{
         transform: translateY(0);
