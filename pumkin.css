@@ -209,3 +209,19 @@ body {
 h1:hover {
   color: aqua;
 }
+
+.button{
+    background: #646ef1;
+    border-radius:5px;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 6px;
+    width: auto;
+    sticky: top;
+}
+
+.button a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}

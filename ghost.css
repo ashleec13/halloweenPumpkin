@@ -156,9 +156,6 @@ body {
 }
 
 /* ADDITIONAL STUFF */
-#container:hover {
-    background: #8b0000;
-}
 
 #container:hover #body #eyes:before,
 #container:hover #body #eyes:after {
@@ -167,4 +164,19 @@ body {
 
 #spooky:hover #body #mouth {
     background: #FFFF33;
+}
+
+.button{
+    background: #646ef1;
+    border-radius:5px;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 6px;
+    width: auto;
+}
+
+.button a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
 }
